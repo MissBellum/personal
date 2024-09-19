@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    height: 100vh;
+    /* overflow: scroll; */
+    background: linear-gradient(45deg, #000000, #121212, #1a1a1a);
+    background-size: 300% 300%;
+    /* animation: gradientAnimation 10s ease backwards; */
+    font-family: Arial, sans-serif;
+    color: #fff;
+    /* text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+/* @keyframes gradientAnimation {
+    0% { background-position: 0% 0%; }
+    100% { background-position: 100% 100%; }
+} */
+
+h1 {
+    font-size: 3rem;
+    color: #00ffcc; /* Neon cyan for contrast */
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.7),
+                 0 0 20px rgba(0, 255, 255, 0.5),
+                 0 0 30px rgba(0, 255, 255, 0.3),
+                 0 0 40px rgba(0, 255, 255, 0.2);
+}

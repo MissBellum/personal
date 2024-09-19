@@ -1,0 +1,134 @@
+body {
+    box-sizing: border-box;
+    padding-top: 5px;
+    /* border: 10px solid rgb(255, 255, 255); */
+    height: 95vh;
+    font: normal normal 300 16px/1.5 "EB Garamond", sans-serif;
+    /* padding: 50px; */
+    /* background-size: 400% 400%; */
+    /* animation: gradientAnimation 10s ease backwards; */
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    /* text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.nav-bar {
+    /* display: inline; */
+    background-color: #000000; 
+    /* padding: 5px; Padding for navbar */
+}
+
+/* .nav-brand {
+    padding-bottom: 0;
+    background-color: #52f858;
+} */
+
+.nav-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1000px; /* Container max width */
+    margin: 0 auto; /* Center the container */
+    /* padding: 0 5px; Padding for the container */
+}
+
+/* .nav-container:first-child {
+    align-self: flex-start;
+} */
+
+a.navbar-item {
+    margin-left: 40px; /* Space between items */
+    color: rgb(255, 255, 255); 
+    text-decoration: none; /* Remove underline */
+    padding: 3px 10px; /* Padding around links */
+    transition: background-color 0.3s; /* Smooth background change */
+}
+
+.navbar-item:hover {
+    background-color: #fbbdc3; /* Darker green on hover */
+    border-radius: 5px; /* Rounded corners */
+    color: #000;
+}
+
+a, h1, h6, footer {
+    font: normal normal 600 16px/1.5 "Bodoni Moda", sans-serif;
+}
+
+.welcome {
+    margin: 30px 10px;
+    font-size: 40px;
+    /* color: #52f858; Neon cyan for contrast */
+    /* text-shadow: 0 0 5px rgb(248, 250, 248),
+                 0 0 10px rgba(231, 232, 231, 0.789),
+                 0 0 15px rgba(181, 180, 180, 0.508),
+                 0 0 20px rgba(168, 167, 167, 0.698); */
+}
+
+.entertainment {
+    text-decoration: none;
+    margin: 3em;
+}
+
+h6 {
+    text-align: center;
+    padding: 0 20px;
+}
+
+#intro {
+    /* display: inline-block; */
+    width: 28em;
+    margin: 20px;
+    word-spacing: 2px;
+    text-align: justify;
+    font: normal normal 300 16px/1.5 "EB Garamond", sans-serif;
+    /* border: 5px solid rgb(11, 0, 0); */
+}
+
+.page-content {
+    padding: 20px;
+}
+
+section {
+    display: flex;
+    /* padding: 10px 20px; */
+    justify-content: right;
+}
+
+li {
+    font: normal normal 300 16px/1.5 "EB Garamond", sans-serif;
+    list-style: none;
+    text-align: left;
+    /* margin: 0; Remove default margin */
+    /* padding: 0; Remove default padding */
+}
+
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 35px; /* Set footer height */
+    background-color: #000000f9;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 5px;
+}
+
+/* Fonts */
+.eb-garamond {
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.bodoni-moda {
+    font-family: "Bodoni Moda", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
