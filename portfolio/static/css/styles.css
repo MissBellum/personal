@@ -34,6 +34,16 @@ body {
     /* padding: 0 5px; Padding for the container */
 }
 
+section > div {
+    /* justify-items: center; */
+    width: 40px;
+    height: 70px;
+}
+
+i {
+    /* margin: 15px; */
+    /* transition: ; */
+}
 /* .nav-container:first-child {
     align-self: flex-start;
 } */
@@ -52,7 +62,13 @@ a.navbar-item {
     color: #000;
 }
 
-a, h1, h6, footer {
+i:hover {
+    color: #fbbdc3;
+    transition: background-color 0.5s;
+}
+
+a, h1, footer {
+    color: #000;
     font: normal normal 600 16px/1.5 "Bodoni Moda", sans-serif;
 }
 
@@ -67,22 +83,34 @@ a, h1, h6, footer {
 }
 
 .entertainment {
-    text-decoration: none;
-    margin: 3em;
+    position: absolute;
+    bottom: 35px;
+    left: 35px;
+    text-decoration: underline;
+}
+
+section {
+    /* justify-items: center; */
+    /* text-align: center; */
+    display: inline;
+    position: relative;
+    top: 10px;
+    padding: 10px;
+    font: normal normal 300 16px/1.5 "EB Garamond", sans-serif;
 }
 
 h6 {
-    text-align: center;
-    padding: 0 20px;
+    /* position: calc(); */
+    /* align-items: inherit; */
 }
 
 #intro {
     /* display: inline-block; */
-    width: 28em;
+    width: 18em;
     margin: 20px;
     word-spacing: 2px;
     text-align: justify;
-    font: normal normal 300 16px/1.5 "EB Garamond", sans-serif;
+    font: normal normal 400 16px/1.5 "EB Garamond", sans-serif;
     /* border: 5px solid rgb(11, 0, 0); */
 }
 
@@ -91,9 +119,14 @@ h6 {
 }
 
 section {
-    display: flex;
+    /* display: wrap; */
+    flex-direction: column;
     /* padding: 10px 20px; */
-    justify-content: right;
+    position: absolute;
+    top: 150px;
+    right: 40px;
+    /* margin: 30px 10px; */
+    align-items: left;
 }
 
 li {

@@ -2,7 +2,7 @@
 <html lang="en-US">
 <head>
     {% block title %}
-    <title>Chrise Nwachukwu</title>
+    <title>Chrise</title>
     {% endblock %}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,6 +13,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/895b8520ea.js" crossorigin="anonymous"></script>
+    <script type="module" src="{% static 'js/main.js' %}"></script>
 </head>
 <body>
     <header>
@@ -25,7 +27,7 @@
                 <!-- <aside> -->
                 <a class="navbar-item" href="{% url 'projects' %}" title="Projects">Projects</a>
                 <a class="navbar-item" href="https://github.com/MissBellum" title="Github">GitHub</a>
-                <a class="navbar-item" href="#">Articles</a>
+                <a class="navbar-item" href="#">Article</a>
                 <a class="navbar-item" href="mailto:chrise.nwachukwu@gmail.com?subject=Website%20Feedback:%20">Contact</a>
             <!-- </aside> -->
             </div>
@@ -43,35 +45,20 @@
         </div>
         <section>
             <div>
-                <h6>Languages</h6>
-                <ul>
-                    <li>Python</li>
-                    <li>Javascript</li>
-                    <!-- <li>More to come...</li> -->
-                </ul>
+                <h6 class="language"></h6>
+                <i id="language" class="fa-solid fa-laptop-code fa-2xl"></i>            
             </div>
             <div>
-                <h6>Frontend</h6>
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>Bootstrap</li>
-                    <li>React</li>
-                </ul>
+                <h6 class="frontend"></h6>
+                <i class="fa-solid fa-code fa-2xl"></i>
             </div>
             <div>
-                <h6>Backend</h6>
-                <ul>
-                    <li>Django</li>
-                    <!-- <li>Coming soon!</li> -->
-                </ul>
+                <h6 class="backend"></h6>
+                <i class="fa-solid fa-terminal fa-2xl"></i>
             </div>
             <div>
-                <h6>Database</h6>
-                <ul>
-                    <li>Postgres</li>
-                    <li>Sqlite</li>
-                </ul>
+                <h6 class="database"></h6>
+                <i class="fa-solid fa-database fa-2xl"></i>
             </div>
         </section>
         </div>
