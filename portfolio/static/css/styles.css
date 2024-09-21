@@ -36,18 +36,24 @@ body {
 
 section > div {
     /* justify-items: center; */
-    /* width: 40px;
-    height: 80px; */
-    margin: 30px;
+    
+    width: 50vw;
+    height: 20vh;
+    /* margin: 30px; */
 }
 
 i {
+    /* display: inline-block; */
     /* margin: 15px; */
     /* transition: ; */
 }
-/* .nav-container:first-child {
-    align-self: flex-start;
-} */
+
+.stack-div {
+    /* flex-direction: row; */
+    display: inline-flex;
+    width: 50%;
+    /* margin-left: 3em; */
+}
 
 a.navbar-item {
     margin-left: 40px; /* Space between items */
@@ -93,15 +99,15 @@ a, h1, footer {
 section {
     justify-content: space-around;
     /* text-align: center; */
-    display: flex;
+    /* display: flex; */
     /* width: 80%vh; */
     /* position: relative; */
     /* padding: 10px; */
     flex-direction: column;
     /* padding: 10px 20px; */
     position: absolute;
-    top: 35px;
-    /* left: 40px;  */
+    top: 80px;
+    left: 75px; 
     /* margin: 0px 10px; */
     /* align-items: left; */
     font: normal normal 300 16px/1.5 "EB Garamond", sans-serif;
@@ -109,7 +115,11 @@ section {
 
 h6 {
     /* align-items: normal; */
-    padding-top: 10px;
+    margin : 2em;
+    padding-left: 0.5em;
+    display: inline-flex;
+    text-decoration: underline;
+
 }
 
 #intro {
@@ -128,8 +138,9 @@ h6 {
 
 li {
     font: normal normal 300 16px/1.5 "EB Garamond", sans-serif;
-    list-style: none;
-    text-align: left;
+    /* display: inline-flex; */
+    /* list-style: none; */
+    /* text-align: left; */
     /* margin: 0; Remove default margin */
     /* padding: 0; Remove default padding */
 }

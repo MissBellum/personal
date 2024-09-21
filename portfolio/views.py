@@ -15,3 +15,6 @@ def projects(request):
 
 def about(request):
     return render(request, 'about.html')
+
+def balls(request):
+    return render(request, "balls.html")
