@@ -43,11 +43,11 @@ section > div {
     /* margin: 30px; */
 }
 
-i {
-    /* display: inline-block; */
-    /* margin: 15px; */
-    /* transition: ; */
-}
+/* i {
+    display: inline-block;
+    margin: 15px;
+    transition: ;
+} */
 
 .stack-div {
     /* flex-direction: row; */
@@ -60,7 +60,7 @@ a.navbar-item {
     /* margin-left: 40px; Space between items */
     color: rgb(255, 255, 255); 
     text-decoration: none; /* Remove underline */
-    padding: 3px 10px; /* Padding around links */
+    padding: 5px 10px; /* Padding around links */
     transition: background-color 0.3s; /* Smooth background change */
 }
 
@@ -77,11 +77,11 @@ i:hover {
 
 a, h1, h2, footer {
     color: #000;
-    font: normal normal 600 16px/1.5 "Bodoni Moda", sans-serif;
+    font: normal normal 600 0.9em "Bodoni Moda", sans-serif;
 }
 
 .welcome {
-    font-size: 40px;
+    font-size: 2.55rem;
     /* color: #52f858; Neon cyan for contrast */
     /* text-shadow: 0 0 5px rgb(248, 250, 248),
                  0 0 10px rgba(231, 232, 231, 0.789),
@@ -103,7 +103,7 @@ section {
     /* width: 80%vh; */
     /* position: relative; */
     /* padding: 10px; */
-    flex-direction: column;
+    flex-direction: row;
     /* padding: 10px 20px; */
     position: absolute;
     top: 15%;
@@ -113,13 +113,19 @@ section {
     font: normal normal 300 16px/1.5 "EB Garamond", sans-serif;
 }
 
-h6 {
-    /* align-items: normal; */
-    margin : 2em;
-    padding-left: 0.5em;
+h5 {
+    /* align-items: stretch; */
+    margin : 3.5em;
+    /* padding-left: 0.5em; */
     display: inline-flex;
     text-decoration: underline;
 
+}
+ul.backend {
+    margin-left: 10.8px;
+}
+ul.database {
+    margin-left: 15px;
 }
 
 .date-font {
@@ -130,9 +136,9 @@ h6 {
     /* display: inline-block; */
     width: 18em;
     margin: 14px;
-    word-spacing: 2px;
+    word-spacing: 0.5em;
     text-align: justify;
-    font: normal normal 400 16px/1.5 "EB Garamond", sans-serif;
+    font: normal normal 400 1em "EB Garamond", sans-serif;
     /* border: 5px solid rgb(11, 0, 0); */
 }
 
@@ -144,12 +150,12 @@ h6 {
 }
 
 li {
-    font: normal normal 300 16px/1.5 "EB Garamond", sans-serif;
+    font: normal normal 300 1.1em "EB Garamond", sans-serif;
     /* display: inline-flex; */
     /* list-style: none; */
     /* text-align: left; */
     /* margin: 0; Remove default margin */
-    /* padding: 0; Remove default padding */
+    /* padding: 0 5px; Remove default padding */
 }
 
 

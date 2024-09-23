@@ -1,7 +1,7 @@
-const langImage = document.querySelector("#language");
-const langText = document.querySelector("h6");
-const stackList = document.querySelector("ul");
-let listItems = ""
+const images = document.querySelectorAll("i");
+const textList = document.querySelectorAll("h5");
+const stackList = document.querySelectorAll("ul");
+const stackDiv = document.querySelectorAll(".stack-div")
 
 const section = {
     "Language": ["Python", "Javascript"],
@@ -10,23 +10,59 @@ const section = {
     "Database": ["Postgres", "Sqlite"],
 }
 
-langImage.addEventListener("mouseenter", () => {
-    // if ( langImage.getAttribute("class").includes("mouseOff") ) {
-        // langImage.setAttribute("class", "fa-solid fa-laptop-code fa-2xl mouseOn");
-        langText.textContent = "Languages";
-        for ( const item in section["Language"] ) {
-            listItems += `<li>${section["Language"][item]}</li>`;
-            console.log(item);
-        };
-        stackList.innerHTML = listItems;
-        // document.appendChild(langText);
+const imageIds = [];
+
+// Loop through the NodeList and extract IDs
+images.forEach(image => {
+    if ( image.id ) { // Check if the image has an ID
+        imageIds.push(image.id);
+        // console.log(image.classList)
+    }
+});
+
+images.forEach(image => {
+    image.addEventListener("mouseenter", () => {
+        if ( image.classList == image.getAttribute("class") ) {
+            textList.forEach(text => {
+                if ( text.classList.contains(image.id.toLowerCase()) ) {
+                    // console.log(text.classList)
+                    text.textContent = `${ image.id }`;
+                };
+            });
+            let listItems = ""; // Reset listItems for each event
+            section[image.id].forEach(item => {
+                listItems += `<li>${ item }</li>`;
+            });
+            stackList.forEach(item => {
+                if ( item.classList.contains(image.id.toLowerCase()) ) {
+                    item.innerHTML = listItems;
+            };
+            });
+            
+            // stackList.innerHTML = listItems;
+        } 
         console.log("on");
-    }, {once: true}
-)
+    });
+});
+
+// images.addEventListener("mouseenter", () => {
+//     if ( images.getAttribute("class").includes("fa-laptop") ) {
+//         // images.setAttribute("class", "fa-solid fa-laptop-code fa-2xl mouseOn");
+//         textList.textContent = "Languages";
+//         for ( const item in section["Language"] ) {
+//             listItems += `<li>${section["Language"][item]}</li>`;
+//             console.log(item);
+//         };
+//         stackList.innerHTML = listItems;
+//         // document.appendChild(textList);
+//         console.log("on");
+//     }
+//     }, {once: true}
+// )
 
 
-// langImage.addEventListener("mouseleave", () => {
-//         langText.textContent = "";
+// images.addEventListener("mouseleave", () => {
+//         textList.textContent = "";
 //         console.log("off");
 //     }
 // )
