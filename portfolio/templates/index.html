@@ -22,7 +22,7 @@
             <div class="nav-container">
                 <!-- To download a file (download="portfolio-favicon.png") inside href -->
                 <a href="{% url 'home' %}" title="Home Page"> 
-                    <img class="nav-brand" src="{% static 'portfolio-favicon.png' %}" alt="portfolio favicon" width="30" height="30" class="d-inline-block align-text-top">
+                    <img class="nav-brand" src="{% static 'portfolio-favicon.png' %}" alt="portfolio favicon" width="30" height="30">
                 </a>
                 <!-- <aside> -->
                 <a class="navbar-item" href="{% url 'projects' %}" title="Projects">Projects</a>
@@ -37,13 +37,13 @@
     
 {% block content %}
     <main>
-        <div class="page-content">
+        <div class="page-content fade-text">
             <h1 class="welcome">Welcome, fellow <span><code>earthlings</code>.</span></h1>
-        <div id="intro">
-            <p>I'm <span class="name-bg">Chrise.</span>
-                I’m currently exploring opportunities in the tech industry. 
-                I’d appreciate any feedback or thoughts you have. Thanks!</p>
-        </div>
+            <div id="intro">
+                <p>I'm <span class="name-bg">Chrise.</span>
+                    I’m currently exploring opportunities in the tech industry. 
+                    I’d appreciate any feedback or thoughts you have. Thanks!</p>
+            </div>
         </div>
     </main>
 {% endblock %}

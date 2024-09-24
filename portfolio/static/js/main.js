@@ -10,21 +10,12 @@ const section = {
     "Database": ["Postgres", "Sqlite"],
 }
 
-const imageIds = [];
-
-// Loop through the NodeList and extract IDs
-images.forEach(image => {
-    if ( image.id ) { // Check if the image has an ID
-        imageIds.push(image.id);
-        // console.log(image.classList)
-    }
-});
-
 images.forEach(image => {
     image.addEventListener("mouseenter", () => {
         if ( image.classList == image.getAttribute("class") ) {
             textList.forEach(text => {
                 if ( text.classList.contains(image.id.toLowerCase()) ) {
+                    text.classList.add("fade-text");
                     // console.log(text.classList)
                     text.textContent = `${ image.id }`;
                 };
@@ -35,14 +26,14 @@ images.forEach(image => {
             });
             stackList.forEach(item => {
                 if ( item.classList.contains(image.id.toLowerCase()) ) {
+                    item.classList.add("fade-text");
                     item.innerHTML = listItems;
-            };
+                };
             });
-            
             // stackList.innerHTML = listItems;
         } 
-        console.log("on");
-    });
+        // console.log("on");
+    }, { once: true }) 
 });
 
 // images.addEventListener("mouseenter", () => {
@@ -60,6 +51,15 @@ images.forEach(image => {
 //     }, {once: true}
 // )
 
+// const imageIds = [];
+
+// // Loop through the NodeList and extract IDs
+// images.forEach(image => {
+//     if ( image.id ) { // Check if the image has an ID
+//         imageIds.push(image.id);
+//         // console.log(image.classList)
+//     }
+// });
 
 // images.addEventListener("mouseleave", () => {
 //         textList.textContent = "";

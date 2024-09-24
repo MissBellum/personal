@@ -5,15 +5,19 @@
 {% endblock %}
 
 {% block content %}
-    {% for project in projects %}
-        <section>
-            <h2>{{ project.title }}</h2>
-            <p>{{ project.description }}</p>
-            <p>Tech: {{ project.technology }}</p>
-            <!-- Make images circular -->
-            <img src="{{ project.image.url }}" alt="{{ project.title }}">
-            <p class="date-font">Date added: {{ project.date }}</p>
-        </section>
-    {% endfor %}
+    <div class="projects">
+        {% for project in projects %}
+            <div class="project-div">
+                <h5>{{ project.title }}</h5>
+                <p>{{ project.description }}</p>
+                <p>Tech: {{ project.technology }}&nbsp;&nbsp;&nbsp;<a class="source" href="{{ project.source }}" title="source code">Source Code</a></p>
+                <!-- Make images circular -->
+                 <div>
+                    <img class="project-img" src="{{ project.image.url }}" alt="{{ project.title }}">
+                    <p class="date-font">Date added: {{ project.date }}</p>
+                 </div>
+            </div>
+        {% endfor %}
+    </div>
 {% endblock %}
     <!-- Include change theme -->

@@ -22,10 +22,9 @@ body {
     /* padding: 5px; Padding for navbar */
 }
 
-/* .nav-brand {
-    padding-bottom: 0;
-    background-color: #52f858;
-} */
+.nav-brand {
+    border-radius: 5px;
+}
 
 .nav-container {
     display: flex;
@@ -61,7 +60,7 @@ a.navbar-item {
     color: rgb(255, 255, 255); 
     text-decoration: none; /* Remove underline */
     padding: 5px 10px; /* Padding around links */
-    transition: background-color 0.3s; /* Smooth background change */
+    transition: color 0.5s; /* Smooth background change */
 }
 
 .navbar-item:hover {
@@ -72,12 +71,26 @@ a.navbar-item {
 
 i:hover {
     color: #fbbdc3;
-    transition: background-color 0.5s;
+    transition: color 0.5s;
 }
 
-a, h1, h2, footer {
+a, h1, h5, footer {
     color: #000;
     font: normal normal 600 0.9em "Bodoni Moda", sans-serif;
+}
+
+.fade-text {
+    opacity: 0; /* Start hidden */
+    animation: fadeIn 2s forwards; /* 2 seconds duration */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 .welcome {
@@ -92,7 +105,7 @@ a, h1, h2, footer {
 .entertainment {
     position: absolute;
     bottom: 35px;
-    right: 10%;
+    right: 8%;
     text-decoration: underline;
 }
 
@@ -129,7 +142,7 @@ ul.database {
 }
 
 .date-font {
-    font-size: 0.8em;
+    font-size: 0.7em;
 }
 
 #intro {
@@ -149,15 +162,33 @@ ul.database {
     /* padding: 20px; */
 }
 
-li {
-    font: normal normal 300 1.1em "EB Garamond", sans-serif;
+li, p {
+    font: normal normal 300 1em "EB Garamond", sans-serif;
     /* display: inline-flex; */
     /* list-style: none; */
     /* text-align: left; */
     /* margin: 0; Remove default margin */
     /* padding: 0 5px; Remove default padding */
 }
+.projects {
+    /* position: static; */
+    width: 95vw;
+    flex-direction: row-reverse;
+    display: flex;
+    margin: 25px 25px;
+    justify-content: center;
+}
 
+.project-div {
+    width: 30%;
+    margin: 1.5em;
+}
+
+.project-img {
+    width: 8em;
+    height: 8em;
+    border-radius: 10px;
+}
 
 footer {
     position: absolute;

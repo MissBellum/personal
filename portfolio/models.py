@@ -10,7 +10,8 @@ class Project(models.Model):
     title = models.CharField(max_length=100)
     description = models.TextField()
     technology = models.CharField(max_length=50)
-    image = ResizedImageField(size=[300, 300], quality=85, upload_to="images/", force_format='JPEG', blank=True)
+    source = models.CharField(max_length=100, default="https://github.com/MissBellum")
+    image = ResizedImageField(size=[250, 250], quality=85, upload_to="images/", force_format='JPEG', blank=True)
     date = models.DateField(verbose_name='date added')
 
     def __str__(self):
