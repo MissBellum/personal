@@ -7,10 +7,10 @@
 {% block content %}
     <div class="projects">
         {% for project in projects %}
-            <div class="project-div">
+            <div class="project-div moving-div">
                 <h5>{{ project.title }}</h5>
                 <p>{{ project.description }}</p>
-                <p>Tech: {{ project.technology }}&nbsp;&nbsp;&nbsp;<a class="source" href="{{ project.source }}" title="source code">Source Code</a></p>
+                <p>Tech: {{ project.technology }}&nbsp;&nbsp;<a class="source" href="{{ project.source }}" title="source code">Source Code</a></p>
                 <!-- Make images circular -->
                  <div>
                     <img class="project-img" src="{{ project.image.url }}" alt="{{ project.title }}">

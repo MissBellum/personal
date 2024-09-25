@@ -1,5 +1,3 @@
-from django.shortcuts import render
-
 # Create your views here.
 # portfolio/views.py
 
@@ -18,3 +16,4 @@ def about(request):
 
 def balls(request):
     return render(request, "balls.html")
+
