@@ -1,8 +1,8 @@
-Personal Portfolio Website
+<h1>Personal Portfolio Website</h1>
 
-Welcome fellow earthlings! This repository includes the source code and assets for my personal portfolio website.
+<p>Welcome fellow earthlings! This repository includes the source code and assets for my personal portfolio website.</p>
 
-## Technologies Used
+# Technologies Used
 
 - HTML
 - CSS
